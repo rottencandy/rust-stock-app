@@ -1,0 +1,7 @@
+table {
+	min-height: 700px;
+}
+
+tbody > tr {
+	cursor: pointer;
+}
