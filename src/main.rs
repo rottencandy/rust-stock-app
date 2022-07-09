@@ -79,9 +79,9 @@ fn delete(conn: &Connection, id: i32) {
 }
 
 fn main() {
-    let html_content = include_str!("frontend/build/app.html");
+    let html_content = include_str!("frontend\\build\\app.html");
 
-    let conn = Connection::open("./stock.db3").unwrap();
+    let conn = Connection::open(".\\stock.db3").unwrap();
     conn.execute(
         "CREATE TABLE IF NOT EXISTS stock (
             id      INTEGER PRIMARY KEY,
